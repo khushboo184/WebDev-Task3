@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS & JavaScript Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced CSS & JavaScript Demo</h1>
+            <p>Responsive Design • Interactive Components • API Integration</p>
+        </header>
+
+        <!-- Interactive Quiz Section -->
+        <div class="section">
+            <h2>🧠 Interactive JavaScript Quiz</h2>
+            <div class="quiz-container">
+                <div id="quiz-content">
+                    <div class="question">
+                        <h3>What does CSS stand for?</h3>
+                        <div class="options">
+                            <div class="option" data-answer="0">Computer Style Sheets</div>
+                            <div class="option" data-answer="1">Cascading Style Sheets</div>
+                            <div class="option" data-answer="2">Creative Style Sheets</div>
+                            <div class="option" data-answer="3">Colorful Style Sheets</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="quiz-btn" id="submit-quiz">Submit Answer</button>
+                <div class="score" id="quiz-score"></div>
+            </div>
+        </div>
+
+        <!-- Image Carousel Section -->
+        <div class="section">
+            <h2>🎠 Interactive Image Carousel</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+                        <span>Modern Web Design</span>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+                        <span>JavaScript Power</span>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+                        <span>API Integration</span>
+                    </div>
+                </div>
+                <button class="carousel-nav prev" id="prev-btn">‹</button>
+                <button class="carousel-nav next" id="next-btn">›</button>
+            </div>
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+
+        <!-- API Data Section -->
+        <div class="section">
+            <h2>🌐 Real-time API Data</h2>
+            <div id="api-content">
+                <div class="loading">Loading data from APIs...</div>
+            </div>
+            <button class="refresh-btn" id="refresh-data">Refresh Data</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
